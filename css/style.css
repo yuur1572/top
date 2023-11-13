@@ -1,0 +1,1061 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "小塚ゴシック Pr6N";
+    color: #000000;
+    font-size: 16px;
+    max-width: 1500px;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.wrappe{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*title*/
+.title{
+    text-align: center;
+    padding: 120px 0 100px;
+}
+
+h2{
+    font-size: 44px;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: "FuturaMaxiCGLight*";
+}
+
+h2::before{
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 50%;
+    margin-top: 3px;
+    background-color: #231815;
+    width: 60px;
+    height: 1px;
+    transform: translateX(-50%);
+}
+
+.ja-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text{
+    padding-block: 40px;
+    line-height: 30px;
+}
+
+
+/*company-img*/
+.company-img{
+    width: 100%;
+    height: 260px;
+    margin-bottom: 110px;
+    position: relative;
+}
+
+.company-img img{
+    height: 260px;
+    object-fit: cover;
+    object-position: 0 -320px;
+}
+
+.company-img .photo-name{
+    font-size: 32px;
+    color: #ffffff;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+
+/*-----------
+    header
+------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 30px 40px;
+    border-bottom: 1px solid #cccccc;
+}
+
+header a{
+    display: inline-block;
+}
+
+h1{
+    letter-spacing: 2px;
+    font-family: "BankGothicBT Medium*";
+    font-size: 48.75px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li{
+    padding-left: 25px;
+}
+
+/*------------
+    main
+-------------*/
+.topimg img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.topimg p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "FuturaMaxiCGBold";
+}
+
+#case-study{
+    margin-bottom: 110px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.flex li{
+    width: 47%;
+    margin-bottom: 60px;
+}
+
+.flex li img{
+    height: 380px;
+    width: 560px;
+    object-fit: cover;
+}
+
+.flex li a{
+    position: relative;
+    z-index: 0;
+}
+
+.flex .box{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    background: #F9CFD2;
+    padding: 6px 20px;
+    z-index: 2;
+    font-family: "FuturaMaxiCGLight*";
+}
+
+.name{
+    padding: 20px 0 8px;
+    border-bottom: 2px solid #6d6a6a;
+    font-size: 18px;
+}
+
+.button{
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    position: relative;
+}
+
+.button a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    position: relative;
+    padding-block: 26px;
+}
+
+.button a::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    right: 40px;
+    top: 40px;
+    width: 25px;
+    height: 1px;
+}
+
+.button a::after{
+    position: absolute;
+    content: "";
+    right: 40px;
+    top: 37px;
+    width: 7px;
+    height: 7px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(45deg);
+}
+
+.button a:hover{
+    animation: all 0.3s;
+    opacity: 0.5;
+}
+
+#service{
+    background: #F9FAF8;
+    padding-bottom: 140px;
+}
+.flex-box{
+    width: 48%;
+}
+
+.flex_box img{
+    width: 560px;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.flex_box .bold{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.flex_box .text{
+    padding-top: 15px; 
+}
+
+/*-----------
+    footer
+-----------*/
+footer{
+    width: 100%;
+    height: 230px;
+    background: #231815;
+    color: #ffffff;
+    position: relative;
+}
+
+.topbutton{
+    writing-mode: vertical-rl;
+    color: #999999;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 250px;
+    right: 30px;
+    height: 100px;
+    font-size: 0.87rem;
+}
+
+.topbutton a{
+    position: relative;
+}
+
+.topbutton a:hover{
+    animation: all 0.3s;
+    opacity: 0.5;
+}
+
+.topbutton a::before{
+    position: absolute;
+    content:"";
+    width: 1px;
+    height: 50px;
+    background: #999999;
+    left: 10px;
+    top:-60px;
+}
+
+.topbutton a::after{
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: -60px;
+    width: 7px;
+    height: 7px;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(135deg);
+}
+
+footer .flex{
+    padding: 40px 20px 10px 8%;
+}
+
+.company_info{
+    width: 30%;
+}
+
+footer h1{
+    font-size: 43px;
+    margin: 0;
+}
+
+footer h3{
+    font-size: 22px;
+    margin: 0;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer nav{
+    width: 70%;
+    padding-top: 50px;
+}
+
+footer .flex li{
+    margin-bottom:0px;
+    padding-left: 10;
+}
+
+footer nav a{
+    color:#ffffff;
+}
+
+.footer{
+    text-align: right;
+    padding-right: 20px;
+}
+
+/*------------
+    contact
+------------*/
+.contact{
+    padding: 0 40px;
+}
+
+#contact .title{
+    border-bottom: 1px solid #cccccc;
+}
+
+.form{
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 140px;
+    max-width: 1000px;
+}
+
+label{
+    width: 100%;
+    max-width: 200px;
+    letter-spacing: 0.05em;
+    height: 70px;
+}
+
+.Form-Item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Form-Item-Input{
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+.Form-Item-Input:nth-child(3){
+    margin-right: 0;
+}
+
+input{
+    font-size: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    max-width: 820px;
+    height: 60px;
+    width: 100%;
+    padding-inline: 1em;
+}
+
+.Form-Item-Input2{
+    max-width: 220px;
+}
+
+.Form-Item:last-child{
+    vertical-align: top;
+    display: table-cell;
+}
+
+textarea{
+    color: #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    width:100%;
+    max-width: 820px;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+.Form-Item-Label-Required{
+    background: #F9CFD2;
+    border-radius: 10px;
+    padding: 1px 10px;
+    font-size: 12px;
+    height: 22px;
+    display: inline-block;
+    text-align: center;
+}
+
+.submit-button input{
+    color: #000000;
+    border: 1px solid #000000;
+    width: 400px;
+    margin-bottom: 0;
+    background: none;
+}
+
+.submit-button{
+    text-align: center;
+    position:relative;
+    display: block;
+}
+
+.submit-button::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    right: 35%;
+    top: 50%;
+    width: 25px;
+    height: 1px;
+}
+    
+.submit-button::after{
+    position: absolute;
+    content: "";
+    right: 35%;
+    top: 45%;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(45deg);
+}
+
+/*--------------
+    company
+--------------*/
+#company .textbox{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#company p{
+    padding-bottom: 40px;
+}
+
+#company .text-right{
+    text-align: right;
+}
+
+#company dl{
+    display: flex;
+    flex-wrap:wrap;
+    border-top: 1px solid #E6E6E6;
+}
+
+#company dt{
+    width: 30%;
+    padding-block: 30px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#company dd{
+    width: 70%;
+    padding-block: 30px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#company ul{
+    display: flex;
+}
+
+#company li{
+    width: 35%;
+    padding-block: 30px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 125px;
+}
+
+#company li:first-child{
+    width: 30%;
+}
+
+/*--------------
+    service
+--------------*/
+.service-info{
+    margin-bottom: 100px;
+}
+
+.info-title{
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #585757;
+    margin-bottom: 30px;
+}
+
+.service .company-img{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.flex-photo{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.flex-photo img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 30px;
+}
+
+.flex-text{
+    display: flex;
+}
+
+.left{
+    width: 65%;
+}
+
+.left p{
+    line-height: 30px;
+}
+
+.right{
+    width: 35%;
+    padding-left: 40px;
+}
+
+.right p{
+    width: 380px;
+    height: 52px;
+    text-align: center;
+    padding-block: 15px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.right ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right li{
+    width: 50%;
+    line-height: 30px;
+}
+
+.right li:last-child{
+    padding-left: 30px;
+}
+
+.right li span:before{
+    content:"-";
+    top: 8px;
+    left: 0px;
+    margin-left: 20px;
+    padding-right: 5px;
+}
+
+/*----------------
+    case study
+-----------------*/
+.case-study-top .flex{
+    justify-content: center;
+}
+
+.case-study-top .flex li{
+    width: 22%;
+}
+
+.serect2{
+    display: inline-block;
+    width: 265px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid #000000;
+    padding-top:10px;
+}
+
+.serect{
+    display: inline-block;
+    width: 265px;
+    height: 45px;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    padding-top:10px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.grid-box{
+    position: relative;
+    width: 48%;
+    max-width: 475px;
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+
+.grid-box img{
+    width: 475px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.number-box{
+    position: absolute;
+    top: 30px;
+    left: -55px;
+    width: 120px;
+    height: 80px;
+    background: #F9CFD2;
+    text-align: center;
+    font-family:"FuturaMaxiCGBook*";
+}
+
+.number{
+    font-size: 32px;
+}
+
+.morebtn{
+    font-size: 18px;
+    text-align: right;
+    padding-right: 70px;
+    position: relative;
+    padding-top: 5px;
+    display: block;
+}
+
+.morebtn::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    right: 10px;
+    top: 18px;
+    width: 40px;
+    height: 1px;
+}
+    
+.morebtn::after{
+    position: absolute;
+    content: "";
+    right: 10px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(45deg);
+}
+
+.number-btn{
+    width: 260px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.number-btn a{
+    border: 1px solid #000000;
+    width: 45px;
+    height: 45px;
+    font-family:"FuturaMaxiCGBook*";
+    font-size: 24px;
+    padding: 6px 0 0 14px;
+    margin-left: 20px;
+}
+
+
+/*details*/
+#case00{
+    padding-top: 50px;
+}
+
+/**/
+.case .flex{
+    justify-content: center;
+}
+
+.case .case-box{
+    background: #F9CFD2;
+    width: 100px;
+    height: 40px;
+    padding-top: 7px;
+    text-align: center;
+    font-family: "FuturaMaxiCGLight*";
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.case p{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.case table{
+    margin: 0 auto;
+    max-width: 600px;
+    height: 140px;
+    border-collapse: collapse;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding-right: 30px;
+}
+
+.case th{
+    border-right: 1px solid #000000;
+    padding-right: 50px;
+}
+
+.case td{
+    padding-left: 20px;
+}
+
+.case .border{
+    border-bottom: 1px solid #000000;
+}
+
+.case img{
+    width: 1000px;
+    height: 695px;
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+
+.case-study .but{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.case-study .but a::before{
+    left: 40px;
+    top: 40px;
+    width: 25px;
+    height: 1px;
+}
+
+.case-study  .but{
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    position: relative;
+}
+
+.case-study .but a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    position: relative;
+    padding-block: 26px;
+}
+
+.case-study .but a::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    left: 40px;
+    top: 38px;
+    width: 25px;
+    height: 1px;
+    width: 25px;
+}
+
+.case-study .but a::after{
+    position: absolute;
+    content: "";
+    left: 40px;
+    top: 35px;
+    width: 7px;
+    height: 7px;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(45deg);
+}
+
+.case-study .but a:hover{
+    animation: all 0.3s;
+    opacity: 0.5;
+}
+
+
+
+/*-------------
+    access
+-------------*/
+.iframe-wrp {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* = height ÷ width × 100 */
+}
+.iframe-wrp iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.access .flex{
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.access .flex a{
+    position: relative;
+}
+
+.access .flex a::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    right: -40px;
+    top: 12px;
+    width: 25px;
+    height: 1px;
+    width: 25px;
+}
+
+.access .flex a::after{
+    position: absolute;
+    content: "";
+    right: -40px;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(45deg);
+}
+
+.access .flex a:hover{
+    animation: all 0.3s;
+    opacity: 0.5;
+}
+
+.map-info a{
+    display: block;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding-top: 12px;
+    margin: 0 0 60px 70px;
+}
+
+
+/*----------------
+    information
+----------------*/
+#information{
+    border-bottom: 1px solid #cccccc;
+}
+
+.info-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.main-article{
+    width: 70%;
+}
+
+article a{
+    color: #999999;
+}
+
+.main-article h3{
+    font-size: 34px;
+    margin-bottom: 60px;
+}
+
+.main-article img{
+    width: 780px;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.articl-text{
+    width: 780px;
+    
+}
+
+#sideber{
+    width: 30%;
+}
+
+#sidebar p{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+#sidebar article{
+    padding-block: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.info-btn{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    padding-bottom: 160px;
+}
+
+.info-btn a{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+    height: 60px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding-top: 18px;
+}
+
+.info-btn .left::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    left: 30px;
+    top: 30px;
+    width: 25px;
+    height: 1px;
+}
+
+.info-btn .left::after{
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 27px;
+    width: 7px;
+    height: 7px;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(45deg);
+}
+
+.info-btn .top::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    right: 30px;
+    top: 20px;
+    width: 1px;
+    height: 25px;
+}
+
+.info-btn .top::after{
+    position: absolute;
+    content: "";
+    right: 27px;
+    top: 19px;
+    width: 7px;
+    height: 7px;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(45deg);
+}
+
+.info-btn .right{
+    padding-left: 0;
+}
+
+.info-btn .right::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    right: 30px;
+    top: 30px;
+    width: 25px;
+    height: 1px;
+}
+
+.info-btn .right::after{
+    position: absolute;
+    content: "";
+    right: 30px;
+    top: 27px;
+    width: 7px;
+    height: 7px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
